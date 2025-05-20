@@ -14,10 +14,10 @@ import "./assets/img/4geeks.ico";
   let when = ['before the class.', 'when I was sleeping.', 'while I was exercising.', 'during my lunch.',];
 
   //genera nº aleatorio
-  let random1 = Math.floor(Math.random() * 4);
-  let random2 = Math.floor(Math.random() * 4);
-  let random3 = Math.floor(Math.random() * 4);
-  let random4 = Math.floor(Math.random() * 4);
+  let random1 = Math.floor(Math.random() * who.length);
+  let random2 = Math.floor(Math.random() * action.length);
+  let random3 = Math.floor(Math.random() * what.length);
+  let random4 = Math.floor(Math.random() * when.length);
 
   document.getElementById("excuse").innerHTML = who[random1] +" "+ action[random2] +" "+ what[random3] +" "+ when[random4];
   console.log("Judith Ramírez");
